@@ -1,0 +1,12 @@
+node_modules/
+.sites-runtime/
+.sites-checkout/
+*.tar.gz
+*.log
+training/
+__pycache__/
+
+# Local hosting and environment configuration
+/.openai/
+.env
+.env.*

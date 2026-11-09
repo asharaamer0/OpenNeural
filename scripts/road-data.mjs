@@ -1,0 +1,1 @@
+import fs from 'node:fs';import {roadDataset} from '../dist/road-data.js';fs.mkdirSync('training',{recursive:true});const data=roadDataset();fs.writeFileSync('training/road-data.json',JSON.stringify(data));console.log(JSON.stringify({train:data.trainX.length,validation:data.valX.length}));

@@ -1,0 +1,22 @@
+{
+  "name": "openneural",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "data": "node scripts/generate-data.mjs",
+    "train": "python scripts/train.py",
+    "evaluate": "node scripts/evaluate-model.mjs",
+    "road:data": "node scripts/road-data.mjs",
+    "road:train": "python scripts/train-road.py",
+    "road:evaluate": "node scripts/evaluate-road.mjs"
+  },
+  "license": "MIT",
+  "description": "A browser-based 3D driving simulator and behavioral cloning lab.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asharaamer0/OpenNeural.git"
+  }
+}
